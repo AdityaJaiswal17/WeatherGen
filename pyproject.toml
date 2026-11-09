@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=77.0.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "weathergen"
+version = "0.1.0"
+description = "Markov chain weather generator predictor for rainfall"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["numpy", "pandas"]
+
+[project.optional-dependencies]
+dev = ["pytest", "flake8", "pytest-cov"]
+
+[tool.setuptools]
+packages = ["weathergen"]

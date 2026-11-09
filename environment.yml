@@ -1,0 +1,11 @@
+    name: weathergen
+    channels:
+      - conda-forge
+    dependencies:
+      - python=3.14
+      - pip
+      - numpy>=2.1
+      - pandas>=2.2.3
+      - matplotlib>=3.10
+      - pip:
+        - -e .[dev]
